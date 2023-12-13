@@ -1,0 +1,131 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Formatação do container principal */
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: auto;
+}
+
+/* Formatação do container box1 */
+.box1{
+	width: 100vw;
+    height: 100vh;
+     background-image: linear-gradient(rgb(0, 0, 0), rgb(87, 93, 107));
+}
+
+/* Formatação da imagem do container box1 */
+.box1 img{
+    width: 500px;
+    height: auto;
+    float: left;
+    padding: 50px;
+    margin-top: 60px;
+}
+
+/* Formatação do h1 do container box1 */
+.box1 h1{
+    color: white;
+    font-weight: normal;
+	font-size: 100pt;
+	text-align: center;
+    padding: 50px;
+}
+
+
+/* Formatação do h2 do container box1 */
+.box1 h2{
+    color: white;
+    font-weight: normal;
+	font-size: 50pt;
+	text-align: center;
+    padding: 10px;
+}
+
+/* Formatação do h3 do container box1 */
+.box1 h3{
+    color: white;
+    font-weight: normal;
+	font-size: 30pt;
+	text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Formatação do button do container box1 */
+.box1 button{
+    float: left;
+    width: 300px;
+    font-size: 20pt;
+    color: white;
+    padding: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(113, 143, 200);
+    opacity: 0.8;
+}
+
+/* Formatação do button ao passar o mouse */
+.box1 button:hover{
+    cursor: pointer;
+    opacity: 1;
+	transition: 0.5s;
+	border-radius: 20px;
+	letter-spacing: 5px;
+}
+
+/* Formatação do container box2 */
+.box2{
+	width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+/* Formatação do container box3 */
+.box3{
+	width: 100vw;
+    height: 100vh;
+    background-color: rgb(90, 78, 78);
+}
+
+/* Formatação do container box4 */
+.box4{
+	width: 100vw;
+    height: 100vh;
+    background-color: rgb(200, 62, 212);
+}
+
+/* Formatação do container box5 */
+.box5{
+	width: 100vw;
+    height: 100vh;
+    background-color: rgb(84, 45, 129);
+}
+
+/* Formatação do container box6 */
+.box6{
+	width: 100vw;
+    height: 100vh;
+    background-color: rgb(86, 177, 33);
+}
+
+/* Formatação do container box7 */
+.box7{
+	width: 100vw;
+    height: 100vh;
+    background-color: rgb(74, 54, 163);
+}
+
+/* Formatação do container box8 */
+.box8{
+	width: 100vw;
+    height: 100vh;
+    background-color: rgb(160, 98, 98);
+}
