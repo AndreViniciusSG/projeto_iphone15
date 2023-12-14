@@ -288,7 +288,7 @@
     -webkit-transition: scale(1.2);
     transform: scale(1.2);
 }
- 
+
 /* Formatação do container box7 */
 .box7{
 	width: 100vw;
@@ -368,8 +368,61 @@
 /* Formatação do container box8 */
 .box8{
 	width: 100vw;
-    height: 100vh;
-    background-color: rgb(160, 98, 98);
+    height: auto;
+}
+
+
+.box8 h1{
+    font-family: Libel;
+    color: black;
+    font-weight: normal;
+	font-size: 40pt;
+    padding-bottom: 50px;
+
+}
+
+/* Formatação do container box8 */
+.box8 img{
+	width: 80px;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Formatação do container box8 */
+.box8 img:hover{
+    cursor: pointer;
+    -moz-transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
+}
+
+.email{
+    width: 30vw;
+    height: auto;
+    padding: 100px;
+    display: inline-block;
+    background-color: rgb(64, 68, 161);
+    margin: 0;
+}
+
+.whats{
+    width: 30vw;
+    height: auto;
+    padding: 100px;
+    display: inline-block;
+    background-color: rgb(113, 143, 200);
+    margin: 0;
+}
+
+.insta{
+    width: 30vw;
+    height: auto;
+    padding: 100px;
+    display: inline-block;
+    background-color: rgb(150, 182, 242);
+    margin: 0;
 }
 
 /* Formatação ao diminuir a tela para uso mobile*/
