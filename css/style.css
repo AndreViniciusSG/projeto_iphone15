@@ -21,6 +21,14 @@
     font-display: swap;
 }
 
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Libel';
+    src: url(../fontes/libel.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
 /* Formatação do container principal */
 .container {
 	display: flex;
@@ -98,11 +106,10 @@
 /* Formatação do button ao passar o mouse */
 .box1 button:hover{
     cursor: pointer;
-    background-color: rgb(153, 171, 204);
+    background-color: rgb(28, 85, 190);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	transition: 0.5s;
 	border-radius: 20px;
-	letter-spacing: 5px;
 }
 
 /* Formatação do container box2 */
@@ -129,7 +136,7 @@
 
 /* Formatação do p do container box3 */
 .box3 p{
-    font-family: Times;
+    font-family: Libel;
     color: black;
     font-weight: normal;
 	font-size: 20pt;
@@ -144,8 +151,50 @@
 /* Formatação do container box4 */
 .box4{
 	width: 100vw;
-    height: 100vh;
-    background-color: rgb(200, 62, 212);
+    height: auto;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+/* Formatação h1 do container box4 */
+.box4 h1{
+    font-family: Geo;
+    color: black;
+    font-weight: normal;
+	font-size: 30pt;
+    padding-bottom: 50px;
+}
+
+.bloco1{
+    width: 40vw;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.bloco2{
+    width: 50vw;
+    height: auto;
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+}
+
+/* Formatação p do container bloco 1 */
+.bloco1 p{
+    font-family: Libel;
+    color: black;
+    font-weight: normal;
+	font-size: 20pt;
+    text-align: justify;
+}
+
+/* Formatação da imagem do container bloco 2 */
+.bloco2 img{
+    width: 450px;
+    height: auto;
 }
 
 /* Formatação do container box5 */
@@ -153,7 +202,6 @@
 	width: 100vw;
     height: auto;
     padding: 50px;
-    background-color: rgb(84, 45, 129);
 }
 
 /* Formatação da imagem do container box5 */
@@ -167,15 +215,154 @@
 /* Formatação do container box6 */
 .box6{
 	width: 100vw;
-    height: 100vh;
-    background-color: rgb(86, 177, 33);
+    height: auto;
+    padding: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(113, 143, 200);
 }
 
+/* Formatação do container bloco 3 */
+.bloco3{
+    width: 40vw;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 150px 0px 150px 0px;
+    max-width: 50%;
+    background-color: white;
+}
+
+/* Formatação do h1 container bloco 3 */
+.bloco3 h1{
+    font-family: Libel;
+    color: black;
+    font-weight: normal;
+	font-size: 20pt;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Formatação do botão do container bloco 3 */
+.bloco3 button{
+    font-family: Geo;
+    width: 300px;
+    font-size: 20pt;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(18, 85, 207);
+}
+
+
+/* Formatação do botão do container bloco 3 */
+.bloco3 button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(46, 113, 238);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.bloco4{
+    width: 50vw;
+    height: auto;
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+}
+
+/* Formatação da imagem do container bloco 4 */
+.bloco4 img{
+    width: 450px;
+    height: auto;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Formatação da imagem do container bloco 4 ao passar o mouse */
+.bloco4 img:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
+}
+ 
 /* Formatação do container box7 */
 .box7{
 	width: 100vw;
-    height: 100vh;
-    background-color: rgb(74, 54, 163);
+    height: auto;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+/* Formatação do container bloco 5 */
+.bloco5{
+    width: 40vw;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 100px 0px 100px 0px;
+    max-width: 50%;
+}
+
+/* Formatação do h1 container bloco 5 */
+.bloco5 h1{
+    font-family: Libel;
+    color: black;
+    font-weight: normal;
+	font-size: 40pt;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Formatação do botão do container bloco 5 */
+.bloco5 button{
+    font-family: Geo;
+    width: 300px;
+    font-size: 20pt;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(18, 85, 207);
+}
+
+
+/* Formatação do botão do container bloco 5 ao passar o mouse */
+.bloco5 button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(46, 113, 238);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Formatação do container bloco 6 */
+.bloco6{
+    width: 50vw;
+    height: auto;
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+}
+
+/* Formatação da imagem do container bloco 6 */
+.bloco6 img{
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Formatação da imagem do container bloco 6 ao passar o mouse */
+.bloco6 img:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* Formatação do container box8 */
