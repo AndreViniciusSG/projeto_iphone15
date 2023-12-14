@@ -5,6 +5,22 @@
 	box-sizing: border-box;
 }
 
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Times';
+    src: url(../fontes/times.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geo';
+    src: url(../fontes/Geometos.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
 /* Formatação do container principal */
 .container {
 	display: flex;
@@ -35,6 +51,7 @@
 
 /* Formatação do h1 do container box1 */
 .box1 h1{
+    font-family: Geo;
     color: white;
     font-weight: normal;
 	font-size: 100pt;
@@ -45,24 +62,27 @@
 
 /* Formatação do h2 do container box1 */
 .box1 h2{
+    font-family: Geo;
     color: white;
     font-weight: normal;
-	font-size: 50pt;
+	font-size: 30pt;
 	text-align: center;
     padding: 10px;
 }
 
 /* Formatação do h3 do container box1 */
 .box1 h3{
+    font-family: Geo;
     color: white;
     font-weight: normal;
-	font-size: 30pt;
+	font-size: 20pt;
 	text-align: center;
     padding-bottom: 50px;
 }
 
 /* Formatação do button do container box1 */
 .box1 button{
+    font-family: Geo;
     display: block;
     float: left;
     width: 300px;
@@ -95,8 +115,30 @@
 /* Formatação do container box3 */
 .box3{
 	width: 100vw;
-    height: 100vh;
-    background-color: rgb(90, 78, 78);
+    height: auto;
+    padding: 50px;
+}
+
+/* Formatação da imagem do container box3 */
+.box3 img{
+    width: 600px;
+    height: auto;
+    float: left;
+    margin: 20px;
+}
+
+/* Formatação do p do container box3 */
+.box3 p{
+    font-family: Times;
+    color: black;
+    font-weight: normal;
+	font-size: 20pt;
+    display: flex;
+    position: right;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    margin-top: 250px;
 }
 
 /* Formatação do container box4 */
@@ -109,8 +151,17 @@
 /* Formatação do container box5 */
 .box5{
 	width: 100vw;
-    height: 100vh;
+    height: auto;
+    padding: 50px;
     background-color: rgb(84, 45, 129);
+}
+
+/* Formatação da imagem do container box5 */
+.box5 img{
+    width: 800px;
+    float: center;
+    height: auto;
+	max-width: 100%;
 }
 
 /* Formatação do container box6 */
@@ -163,4 +214,21 @@
         text-align: center;
         width: 300px;
     }
+
+    /* Formatação da imagem do container box3 */
+    .box3 img{
+        width: 500px;
+        height: auto;
+        float: center;
+        margin: 20px;
+    }
+
+    /* Formatação do p do container box3 */
+    .box3 p{
+        display: flex;
+	    font-size: 20pt;
+        text-align: justify;
+        margin-top: 100px;
+    }
+
 }
