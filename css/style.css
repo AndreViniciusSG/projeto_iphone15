@@ -120,8 +120,7 @@
     height: auto;
     margin-top: 50px;
     padding: auto;
-    min-height: 100vh;
-    background-color: red;
+    background-color: white;
 }
 
 /* Formatação do container carrossel */
@@ -129,7 +128,7 @@
     margin: 0 auto;
     overflow: hidden;
     width: 1000px;
-    height: 562px;
+    height: auto;
     background-color: blue;
 }
 
@@ -193,7 +192,41 @@
     margin-left: -75%;
 }
 
+.navigation-auto div{
+    border: 2px solid rgb(94, 94, 94);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
 
+.navigation-auto{
+    position: absolute;
+    width: 1000px;
+    margin-top: 522px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgb(94, 94, 94);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgb(94, 94, 94);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgb(94, 94, 94);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: rgb(94, 94, 94);
+}
 /* Formatação do container box3 */
 .box3{
 	width: 100vw;

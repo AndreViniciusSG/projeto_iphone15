@@ -1,17 +1,15 @@
-const imgs = document.getElementById("img");
-const img = document.querySelectorAll("#img img");
+let count = 1;
+document.getElementById("radio1").checkd = true;
 
-let idx = 0;
+setInterval( function(){
+    nextImage();
+}, 2000)
 
-function carrossel(){
-    idx++;
-
-    if(idx > img.length - 1){
-        idx = 0;
+function nextImage(){
+    count++;
+    if(count>4){
+        count = 1;
     }
 
-    imgs.style.transform = 'translateX(${-idx *1000}px)';
+    document.getElementById("radio"+count).checked= true;
 }
-
-setInterval(carrossel, 1800);
-
