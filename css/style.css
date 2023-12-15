@@ -38,6 +38,7 @@
 	width: 100vw;
 	height: auto;
     background-color: white;
+    margin: 0;
 }
 
 /* Formatação do container box1 */
@@ -116,9 +117,82 @@
 /* Formatação do container box2 */
 .box2{
 	width: 100vw;
-    height: 100vh;
+    height: auto;
+    margin-top: 50px;
+    padding: auto;
+    min-height: 100vh;
     background-color: red;
 }
+
+/* Formatação do container carrossel */
+.slider{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1000px;
+    height: 562px;
+    background-color: blue;
+}
+
+.slides{
+    width: 400%;
+    height: 562px;
+    display: flex;
+}
+
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 1000px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid rgb(94, 94, 94);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: rgb(94, 94, 94);;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
 
 /* Formatação do container box3 */
 .box3{
